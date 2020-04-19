@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.logo {
+	height: 50px;
+	width: 150px;
+	background-color: lightgreen;
+}
+
+.social {
+	height: 50px;
+	width: 150px;
+	background-color: lightskyblue;
+}

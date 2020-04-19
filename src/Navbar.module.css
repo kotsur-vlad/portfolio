@@ -1,0 +1,17 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.menu {
+	height: 450px;
+	width: 60px;
+	background-color: lightgreen;
+}
+
+.social {
+	height: 450px;
+	width: 60px;
+	background-color: lightskyblue;
+}
