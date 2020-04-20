@@ -1,11 +1,6 @@
 .footer {
+	height: 7vh;
+	background-color: darkorange;
 	z-index: 1;
 	margin-top: auto;
-}
-
-.test {
-	/*display: flex;*/
-	background-color: darkorange;
-	/*flex-direction: column;*/
-	/*justify-content: flex-end;*/
 }
