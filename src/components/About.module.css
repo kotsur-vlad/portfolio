@@ -1,0 +1,33 @@
+.about {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: lightpink;
+	width: 70%;
+	align-self: flex-start;
+}
+
+.info {
+	width: 300px;
+	background-color: lightblue;
+	border: 1px solid;
+}
+
+.photo {
+	width: 150px;
+	border: 1px solid;
+	background-color: lightblue;
+}
+
+.stack {
+	width: 300px;
+	border: 1px solid;
+	background-color: lightblue;
+}
+
+.soft {
+	width: 500px;
+	border: 1px solid;
+	background-color: lightblue;
+}

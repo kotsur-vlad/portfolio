@@ -1,12 +1,27 @@
-.App {
+.appWrapper {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: #F4F5F6 url("./bg.png") repeat;
 	height: 100vh;
+	outline-offset: -15px;
+	outline: 15px solid #333344;
+
+	width: 100%;
+	overflow: hidden;
+	min-height: ;
+	min-width: ;
 }
 
-.contentWrapper {
-	background-color: azure;
-	height: 100vh;
-	position: fixed;
+.container {
+	z-index: 1;
 	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 90%;
+	background-color: white;
 }
