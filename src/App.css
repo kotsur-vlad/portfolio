@@ -1,27 +1,27 @@
 .appWrapper {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	background: #F4F5F6 url("./bg.png") repeat;
 	height: 100vh;
 	outline-offset: -15px;
 	outline: 15px solid #333344;
-
-	width: 100%;
 	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+
+	width: ;
 	min-height: ;
 	min-width: ;
 }
 
 .container {
-	z-index: 1;
-	width: 100%;
-
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	height: 85vh;
+	width: 100%;
+	margin: 0 50px;
 
-	height: 90%;
-	background-color: white;
+	background-color: lightyellow;
 }

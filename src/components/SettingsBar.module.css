@@ -1,0 +1,35 @@
+.settingsBar {
+	height: 85vh;
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.settingsButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: #333344;
+	color: #F4F5F6;
+	width: 50px;
+	height: 48px;
+	border-bottom: 1px solid #444444;
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
+
+}
+
+.settingsButton:first-child {
+	border-top: 1px solid #444444;
+
+}
+
+.settingsButton:active {
+	background: #F4F5F6;
+	color: #333344;
+}
