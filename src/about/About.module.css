@@ -58,7 +58,7 @@
 
 .avatar{
 	background-repeat: no-repeat;
-	background-image: url("./../123.jpg");
+	background-image: url("avatar.jpg");
 	background-size: cover;
 	border-radius: 50%;
 

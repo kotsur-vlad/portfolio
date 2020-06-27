@@ -5,6 +5,7 @@ import styles from './About.module.css'
 const About = () => {
 	return (
 		<div className={styles.about}>
+
 			<div className={styles.firstLine}>
 
 				<div className={styles.info}>
@@ -43,9 +44,11 @@ const About = () => {
 				</div>
 
 			</div>
+
 			<div className={styles.secondLine}>
 				<div className={styles.soft}>My Bla-bla</div>
 			</div>
+
 		</div>
 	);
 }

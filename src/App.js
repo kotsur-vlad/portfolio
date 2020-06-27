@@ -2,11 +2,11 @@ import React from 'react';
 import {Route} from "react-router-dom";
 
 import './App.css';
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
-import SettingsBar from "./components/SettingsBar";
+import NavBar from "./main/NavBar";
+import SettingsBar from "./main/SettingsBar";
+import About from "./about/About";
+import Projects from "./projects/Projects";
+import Contacts from "./contacts/Contacts";
 
 const App = () => {
 	return (

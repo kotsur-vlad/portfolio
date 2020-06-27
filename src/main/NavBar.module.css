@@ -1,35 +1,40 @@
-.settingsBar {
+.navBar {
 	height: 85vh;
 	position: absolute;
-	right: 0;
-	display: flex;
-	flex-direction: column;
+	left: 0;
+
 }
 
-.settingsButton {
+.navBar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: pointer;
+}
+
+.link a {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	cursor: pointer;
 	background: #333344;
 	color: #F4F5F6;
 	width: 50px;
 	height: 48px;
 	border-bottom: 1px solid #444444;
+	text-decoration: none;
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
 	-moz-transition: all 0.7s;
 	-webkit-transition: all 0.7s;
 	transition: all 0.7s;
-
 }
 
-.settingsButton:first-child {
+.link a:first-child {
 	border-top: 1px solid #444444;
-
 }
 
-.settingsButton:active {
+.link a.activeLink {
 	background: #F4F5F6;
 	color: #333344;
 }

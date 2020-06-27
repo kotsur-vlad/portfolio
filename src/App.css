@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #F4F5F6 url("./bg.png") repeat;
+	background: #F4F5F6 url("main/bg.png") repeat;
 	height: 100vh;
 	outline-offset: -15px;
 	outline: 15px solid #333344;
@@ -10,8 +10,6 @@
 	box-sizing: border-box;
 	position: relative;
 
-	width: ;
-	min-height: ;
 	min-width: ;
 }
 
