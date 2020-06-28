@@ -2,10 +2,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #F4F5F6 url("main/bg.png") repeat;
+	background: #F4F5F6 url("assets/image/bg.png") repeat;
 	height: 100vh;
-	outline-offset: -15px;
-	outline: 15px solid #333344;
+	outline-offset: -20px;
+	outline: 20px solid #333344;
 	overflow: hidden;
 	box-sizing: border-box;
 	position: relative;

@@ -1,78 +1,80 @@
 .about {
 	display: flex;
 	flex-direction: column;
-	justify-content: ;
 	align-items: center;
 
 	width: 80%;
 	background-color: lightpink;
+	justify-content: ;
 }
 
 .firstLine {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 
+	width: ;
 	height: 300px;
 	background-color: lightblue;
 }
 
 .secondLine {
 
-
 	height: 300px;
 	background-color: lightsalmon;
 }
 
 .info {
-	width: 300px;
+	text-align: right;
+	letter-spacing: 0.5px;
+
+	width: 400px;
 	background-color: lightblue;
 	border: 1px solid;
-}
-
-.headerText {
-	letter-spacing: 1px;
-	color: #333333;
-	border-bottom: 7px double #333333;
-}
-
-.header {
-	width: 75%;
-	padding: 8px 0 13px 0;
-	border-bottom: 1px solid #334;
-}
-
-.info .header {
-	text-align: right;
 }
 
 .photo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: #333333;
+	font-weight: 500;
 
-	width: 150px;
+	width: 300px;
 	border: 1px solid;
 	background-color: lightblue;
 }
 
 .avatar{
-	background-repeat: no-repeat;
-	background-image: url("avatar.jpg");
+	margin: 10px 0;
+	background: url("./../assets/image/avatar.jpg") no-repeat;
 	background-size: cover;
 	border-radius: 50%;
-
-	height: 100px;
-	width: 100px;
-
+	border: 1px solid #333344;
+	height: 198px;
+	width: 198px;
 }
 
-.name {
+.photo span {
+	letter-spacing: 0.5px;
+	margin: 5px 0 10px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.2rem;
+}
 
+.photo ul li {
+	display: inline-block;
+	font-size: 1.5rem;
+	border: 1px solid #333344;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin: 0 5px;
 }
 
 .stack {
-	width: 300px;
+	letter-spacing: 0.5px;
+
+	width: 400px;
 	border: 1px solid;
 	background-color: lightblue;
 }
@@ -81,4 +83,8 @@
 	width: 500px;
 	border: 1px solid;
 	background-color: lightsalmon;
+}
+
+.soft a img{
+	vertical-align: middle;
 }

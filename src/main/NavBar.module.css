@@ -1,14 +1,11 @@
 .navBar {
+	font-size: 1.4rem;
 	height: 85vh;
 	position: absolute;
 	left: 0;
-
 }
 
 .navBar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 	cursor: pointer;
 }
 
@@ -37,4 +34,8 @@
 .link a.activeLink {
 	background: #F4F5F6;
 	color: #333344;
+}
+
+.ico {
+	height: 20px;
 }
