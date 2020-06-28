@@ -10,8 +10,8 @@ const NavBar = () => {
 		<div className={styles.navBar}>
 			<ul>
 				<li className={styles.link}><NavLink exact to="/" activeClassName={styles.activeLink}><FontAwesomeIcon icon={faUser} size="2x" className={styles.ico}/></NavLink></li>
-				<li className={styles.link}><NavLink to="/projects" activeClassName={styles.activeLink}><FontAwesomeIcon icon={faImage}size="2x" className={styles.ico}/></NavLink></li>
-				<li className={styles.link}><NavLink to="/contacts" activeClassName={styles.activeLink}><FontAwesomeIcon icon={faEnvelope}size="2x" className={styles.ico}/></NavLink></li>
+				<li className={styles.link}><NavLink to="/projects" activeClassName={styles.activeLink}><FontAwesomeIcon icon={faImage} size="2x" className={styles.ico}/></NavLink></li>
+				<li className={styles.link}><NavLink to="/contacts" activeClassName={styles.activeLink}><FontAwesomeIcon icon={faEnvelope} size="2x" className={styles.ico}/></NavLink></li>
 			</ul>
 		</div>
 	);

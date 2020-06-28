@@ -1,7 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCircle} from '@fortawesome/free-regular-svg-icons'
-import {faDownload, faCodeBranch, faTools} from '@fortawesome/free-solid-svg-icons'
+import {faDownload, faCodeBranch, faToolbox} from '@fortawesome/free-solid-svg-icons'
 import {faHtml5, faCss3Alt, faJsSquare, faReact} from '@fortawesome/free-brands-svg-icons'
 
 import styles from './About.module.css'
@@ -27,7 +26,7 @@ const About = () => {
 					<div className={styles.avatar}/>
 					<span>Front-end Developer</span>
 					<ul>
-						<li><a href="">Resume <FontAwesomeIcon icon={faDownload}/></a></li>
+						<li><a href="#">Resume <FontAwesomeIcon icon={faDownload}/></a></li>
 						<li><a href="https://github.com/kotsur-vlad" rel="noopener noreferrer"
 							   target="_blank"><FontAwesomeIcon
 							icon={faCodeBranch}/> GitHub</a></li>
@@ -37,13 +36,13 @@ const About = () => {
 				<div className={styles.stack}>
 					<Title title="technologies"/>
 					<ul>
-						<li><FontAwesomeIcon icon={faHtml5}/> HTML5</li>
-						<li><FontAwesomeIcon icon={faCss3Alt}/> CSS3, Sass</li>
-						<li><FontAwesomeIcon icon={faJsSquare}/> ES6+, axios,</li>
-						<li><FontAwesomeIcon icon={faReact}/> React-Redux, react-router-dom, ducks, css-modules,
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faHtml5}/></span> HTML5</li>
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faCss3Alt}/></span> CSS3, Sass</li>
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faJsSquare}/></span> ES6+, axios,</li>
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faReact}/></span> React-Redux, react-router-dom, ducks, css-modules,
 							proptypes
 						</li>
-						<li><FontAwesomeIcon icon={faTools}/> Git, Yarn, npm</li>
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faToolbox}/></span> Git, Yarn, npm</li>
 					</ul>
 				</div>
 			</div>
@@ -56,7 +55,7 @@ const About = () => {
 						React-Redux
 						architecture. And I always improve my skills and purposefully learn new technologies. I have
 						some
-						experience in commercial freelance development. In my free time I solve tasks on codewars:
+						experience in commercial freelance development. In my free time I solve tasks on codewars:&nbsp;
 						<a href="https://www.codewars.com/users/kotsur.vlad/" rel="noopener noreferrer" target="_blank">
 							<img src="https://www.codewars.com/users/kotsur.vlad/badges/micro" alt=""/>
 						</a>

@@ -6,11 +6,10 @@
 	height: 100vh;
 	outline-offset: -20px;
 	outline: 20px solid #333344;
-	overflow: hidden;
+	overflow: auto;
 	box-sizing: border-box;
 	position: relative;
-
-	min-width: ;
+	min-width: 320px;
 }
 
 .container {
@@ -18,7 +17,6 @@
 	justify-content: center;
 	align-items: flex-start;
 	height: 85vh;
-	width: 100%;
 	margin: 0 50px;
 
 	background-color: lightyellow;
