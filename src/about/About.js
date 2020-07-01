@@ -38,10 +38,8 @@ const About = () => {
 					<ul>
 						<li><span className={styles.icon}><FontAwesomeIcon icon={faHtml5}/></span> HTML5</li>
 						<li><span className={styles.icon}><FontAwesomeIcon icon={faCss3Alt}/></span> CSS3, Sass</li>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faJsSquare}/></span> ES6+, axios,</li>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faReact}/></span> React-Redux, react-router-dom, ducks, css-modules,
-							proptypes
-						</li>
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faJsSquare}/></span> ES6+, axios</li>
+						<li><span className={styles.icon}><FontAwesomeIcon icon={faReact}/></span> React-Redux</li>
 						<li><span className={styles.icon}><FontAwesomeIcon icon={faToolbox}/></span> Git, Yarn, npm</li>
 					</ul>
 				</div>

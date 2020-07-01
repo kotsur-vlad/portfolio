@@ -48,7 +48,7 @@
 
 .avatar {
 	margin: 10px 0;
-	background: url("./../assets/image/avatar.jpg") no-repeat;
+	background: url("../assets/images/avatar.jpg") no-repeat;
 	background-size: cover;
 	border-radius: 50%;
 	border: 1px solid #333344;
@@ -124,7 +124,7 @@
 
 .soft p {
 	padding: 0 15px 20px;
-	margin: 15px 0 0;
+	margin: 15px 0 15px;
 }
 
 .soft p:first-child {
@@ -133,4 +133,25 @@
 
 .soft a img {
 	vertical-align: middle;
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+	.photo {
+		order: 3
+	}
+}
+
+@media screen and (max-width: 365px) {
+	.info, .stack {
+		padding: 0 40px;
+	}
+	.soft p:first-child {
+		padding: 5px 30px 0;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.soft {
+		width: 80%;
+	}
 }

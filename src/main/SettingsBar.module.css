@@ -33,3 +33,10 @@
 	background: #F4F5F6;
 	color: #333344;
 }
+
+@media screen and (max-width: 365px) {
+	.settingsButton {
+		width: 40px;
+		height: 38px;
+	}
+}

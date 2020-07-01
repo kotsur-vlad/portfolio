@@ -39,3 +39,10 @@
 .ico {
 	height: 20px;
 }
+
+@media screen and (max-width: 365px) {
+	.link a {
+		width: 40px;
+		height: 38px;
+	}
+}

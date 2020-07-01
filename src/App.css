@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #F4F5F6 url("assets/image/bg.png") repeat;
+	background: #F4F5F6 url("assets/images/bg.png") repeat;
 	height: 100vh;
 	outline-offset: -20px;
 	outline: 20px solid #333344;
