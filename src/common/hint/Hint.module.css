@@ -1,0 +1,36 @@
+.hint {
+	visibility: hidden;
+	position: absolute;
+	padding: 16px 25px;
+	width: auto;
+	top: 0;
+	left: 60px;
+	background: #333344;
+	color: #F4F5F6;
+	text-align: center;
+	border-radius: 3px;
+	transition: opacity 0.5s;
+	opacity: 0.8;
+}
+
+.hint::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent #334 transparent transparent;
+}
+
+.hintVisible {
+	visibility: visible;
+}
+
+@media screen and (max-width: 365px) {
+	.hint {
+		padding: 11px 25px;
+		left: 50px;
+	}
+}

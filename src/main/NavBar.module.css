@@ -9,6 +9,40 @@
 	cursor: pointer;
 }
 
+.navBar li {
+	position: relative
+}
+
+.linkHint {
+	visibility: hidden;
+	position: absolute;
+	padding: 16px 25px;
+	width: auto;
+	top: 0;
+	left: 60px;
+	background: #333344;
+	color: #F4F5F6;
+	text-align: center;
+	border-radius: 3px;
+	transition: opacity 0.5s;
+	opacity: 0.8;
+}
+
+.linkHint::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent #334 transparent transparent;
+}
+
+.linkHintVisible {
+	visibility: visible;
+}
+
 .link a {
 	display: flex;
 	flex-direction: column;
@@ -44,5 +78,9 @@
 	.link a {
 		width: 40px;
 		height: 38px;
+	}
+	.linkHint {
+		padding: 11px 25px;
+		left: 50px;
 	}
 }
