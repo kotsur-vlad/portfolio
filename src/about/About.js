@@ -7,6 +7,7 @@ import styles from './About.module.scss'
 import Title from "../common/title/Title";
 
 const About = () => {
+
 	return (
 		<div className={styles.about}>
 			<div className={styles.firstLine}>
@@ -16,7 +17,7 @@ const About = () => {
 						<li>Name: Vlad Kotsur</li>
 						<li>Age: 24 years</li>
 						<li>City: Minsk</li>
-						<li>Experience: 5 months</li>
+						<li>Experience: 6 months</li>
 						<li>English: intermediate (B1)</li>
 					</ul>
 				</div>
