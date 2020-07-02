@@ -1,7 +1,7 @@
 .settingsBar {
-	height: 85vh;
 	position: fixed;
 	right: 0;
+	height: 85vh;
 	font-size: 1.4rem;
 }
 

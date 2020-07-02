@@ -1,0 +1,13 @@
+@mixin flex ($direction, $mainAxis, $minorAxis) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $mainAxis;
+  align-items: $minorAxis;
+}
+
+@mixin transition ($prop) {
+  -o-transition: $prop;
+  -moz-transition: $prop;
+  -webkit-transition: $prop;
+  transition: $prop;
+}

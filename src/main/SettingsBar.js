@@ -2,7 +2,7 @@ import React from "react";
 import {faLanguage, faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./SettingsBar.module.css";
-import Icon from "../common/hint/Icon";
+import Icon from "../common/icon/Icon";
 
 const SettingsBar = () => {
 

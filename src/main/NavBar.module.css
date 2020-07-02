@@ -1,8 +1,8 @@
 .navBar {
-	font-size: 1.4rem;
-	height: 85vh;
 	position: fixed;
 	left: 0;
+	height: 85vh;
+	font-size: 1.4rem;
 }
 
 .navBar ul {

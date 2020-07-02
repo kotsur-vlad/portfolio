@@ -2,7 +2,7 @@ import React from 'react';
 import {faUser, faEnvelope, faImage} from "@fortawesome/free-solid-svg-icons";
 
 import styles from './NavBar.module.css';
-import Icon from "../common/hint/Icon";
+import Icon from "../common/icon/Icon";
 
 const NavBar = () => {
 

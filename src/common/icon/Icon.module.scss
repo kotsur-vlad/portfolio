@@ -1,0 +1,91 @@
+@import './../styles/sass/variables';
+@import './../styles/sass/mixins';
+
+$borderColor: #444444;
+
+%link-button-block {
+  @include flex(column, center, center);
+  @include transition(all 0.7s);
+  height: 48px;
+  width: 50px;
+  background: $primaryColor;
+  color: $alternateColor;
+  border-bottom: 1px solid $borderColor;
+  border-top: 1px solid $borderColor;
+  @media screen and (max-width: 365px) {
+    height: 38px;
+    width: 40px;
+  }
+}
+
+.link {
+  position: relative;
+
+  a {
+    @extend %link-button-block;
+    text-decoration: none;
+  }
+
+  & .activeLink {
+    background: $alternateColor;
+    color: $primaryColor;
+  }
+}
+
+.button {
+  @extend %link-button-block;
+
+  &:hover {
+    background: $alternateColor;
+    color: $primaryColor;
+  }
+
+  .hint {
+    left: -121px;
+
+    &::after {
+      right: -20%;
+      margin-top: -10px;
+      border-color: transparent transparent transparent $primaryColor;
+    }
+  }
+}
+
+.ico {
+  height: 20px;
+}
+
+.hint {
+  @include transition(opacity 0.5s);
+  visibility: hidden;
+  position: absolute;
+  left: 60px;
+  width: auto;
+  padding: 13px 24px;
+  border-radius: 3px;
+  background: $primaryColor;
+  color: $alternateColor;
+  text-align: center;
+  opacity: 0.8;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent $primaryColor transparent transparent;
+  }
+
+  @media screen and (max-width: 365px) {
+    left: 50px;
+    padding: 10px 20px;
+
+  }
+}
+
+.hintVisible {
+  visibility: visible;
+}

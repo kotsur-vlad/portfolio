@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from './Icon.module.css';
+import styles from './Icon.module.scss';
 import {NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 

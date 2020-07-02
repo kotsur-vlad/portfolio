@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route} from "react-router-dom";
 
-import './App.css';
+import './App.scss';
 import NavBar from "./main/NavBar";
 import SettingsBar from "./main/SettingsBar";
 import About from "./about/About";

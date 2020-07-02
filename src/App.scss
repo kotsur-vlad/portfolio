@@ -1,0 +1,21 @@
+@import './common/styles/sass/variables';
+@import './common/styles/sass/mixins';
+
+.appWrapper {
+	@include flex (row, center, center);
+	position: relative;
+	box-sizing: border-box;
+	overflow: auto;
+	height: 100vh;
+	min-width: 320px;
+	background: $bgColor url("assets/images/bg.png") repeat;
+	outline: 20px solid $primaryColor;
+	outline-offset: -20px;
+	.container {
+		@include flex (row, center, flex-start);
+		height: 85vh;
+		margin: 0 50px;
+
+		background-color: lightyellow;
+	}
+}
