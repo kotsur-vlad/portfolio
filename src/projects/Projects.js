@@ -7,7 +7,7 @@ import Project from "../common/project/Project";
 const Projects = () => {
 	return (
 		<div className={styles.wrapper}>
-			<Title title="My projects"/>
+			<Title title="My projects" padding={4} align="center"/>
 
 			<div className={styles.projects}>
 				<div>

@@ -9,11 +9,6 @@
 	background-color: lightpink;
 }
 
-.wrapper h3 {
-	text-align: center;
-	padding-bottom: 3px;
-}
-
 .projects {
 	display: flex;
 	justify-content: center;

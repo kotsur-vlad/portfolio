@@ -11,7 +11,7 @@ const About = () => {
 		<div className={styles.about}>
 			<div className={styles.firstLine}>
 				<div className={styles.info}>
-					<Title title="personal info"/>
+					<Title title="personal info" padding={4}/>
 					<ul>
 						<li>Name: Vlad Kotsur</li>
 						<li>Age: 24 years</li>
@@ -31,7 +31,7 @@ const About = () => {
 					</ul>
 				</div>
 				<div className={styles.stack}>
-					<Title title="technologies"/>
+					<Title title="technologies" padding={4}/>
 					<ul>
 						<li><span className={styles.icon}><FontAwesomeIcon icon={faHtml5}/></span> HTML5</li>
 						<li><span className={styles.icon}><FontAwesomeIcon icon={faCss3Alt}/></span> CSS3, Sass</li>
