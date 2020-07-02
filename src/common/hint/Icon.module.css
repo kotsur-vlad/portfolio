@@ -1,4 +1,4 @@
-li {
+.link {
 	position: relative
 }
 
@@ -12,6 +12,7 @@ li {
 	width: 50px;
 	height: 48px;
 	border-bottom: 1px solid #444444;
+	border-top: 1px solid #444444;
 	text-decoration: none;
 	-o-transition: all 0.7s;
 	-moz-transition: all 0.7s;
@@ -19,11 +20,29 @@ li {
 	transition: all 0.7s;
 }
 
-.link a:first-child {
-	border-top: 1px solid #444444;
+.link a.activeLink {
+	background: #F4F5F6;
+	color: #333344;
 }
 
-.link a.activeLink {
+.button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #333344;
+	color: #F4F5F6;
+	width: 50px;
+	height: 48px;
+	border-bottom: 1px solid #444444;
+	border-top: 1px solid #444444;
+	-o-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
+}
+
+.button:hover {
 	background: #F4F5F6;
 	color: #333344;
 }
@@ -63,7 +82,7 @@ li {
 }
 
 @media screen and (max-width: 365px) {
-	.link a {
+	.link a, .button {
 		width: 40px;
 		height: 38px;
 	}

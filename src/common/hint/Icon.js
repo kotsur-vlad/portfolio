@@ -11,7 +11,11 @@ const Icon = (props) => {
 		visibility = !visibility;
 	};
 
-	let visibility = false;
+	const onSettingClick = () => {
+		console.log("sett changed");
+	};
+
+	let visibility = true;
 
 	const hintClassName = visibility ? `${styles.hint} ${styles.hintVisible}` : styles.hint;
 
@@ -24,7 +28,7 @@ const Icon = (props) => {
 						<span className={hintClassName}>{props.hint}</span>
 					</NavLink>
 				</li>
-				: <li className={styles.link} onMouseEnter={onLinkMouseOver}>
+				: <li className={styles.button} onClick={onSettingClick}>
 					<FontAwesomeIcon icon={props.icon} size="2x" className={styles.ico}/>
 					<span className={hintClassName}>{props.hint}</span>
 				</li>
