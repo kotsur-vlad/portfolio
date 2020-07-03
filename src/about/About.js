@@ -5,8 +5,19 @@ import {faHtml5, faCss3Alt, faJsSquare, faReact} from '@fortawesome/free-brands-
 
 import styles from './About.module.scss'
 import Title from "../common/title/Title";
+import StackItem from "./StackItem";
 
 const About = () => {
+
+	const stackInfoProps = [
+		{id: 1, icon: faHtml5, info: ' HTML5'},
+		{id: 2, icon: faCss3Alt, info: ' CSS3, Sass'},
+		{id: 3, icon: faJsSquare, info: ' ES6+, axios'},
+		{id: 4, icon: faReact, info: ' React-Redux'},
+		{id: 5, icon: faToolbox, info: ' Git, Yarn, npm'}
+	]
+
+	const stackInfo = stackInfoProps.map(pr => <StackItem key={pr.id} icon={pr.icon} info={pr.info}/>)
 
 	return (
 		<div className={styles.about}>
@@ -34,11 +45,7 @@ const About = () => {
 				<div className={styles.stack}>
 					<Title title="technologies" padding={4}/>
 					<ul>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faHtml5}/></span> HTML5</li>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faCss3Alt}/></span> CSS3, Sass</li>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faJsSquare}/></span> ES6+, axios</li>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faReact}/></span> React-Redux</li>
-						<li><span className={styles.icon}><FontAwesomeIcon icon={faToolbox}/></span> Git, Yarn, npm</li>
+						{stackInfo}
 					</ul>
 				</div>
 			</div>

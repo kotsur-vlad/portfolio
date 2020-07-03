@@ -1,0 +1,15 @@
+@import './../styles/sass/variables';
+
+.header {
+	width: 100%;
+	margin: 20px 0;
+	border-bottom: 1px solid $primaryColor;
+	color: $primaryColor;
+	font-size: 2.2rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	span {
+		border-bottom: 7px double $primaryColor;
+	}
+}

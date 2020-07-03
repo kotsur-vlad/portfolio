@@ -2,7 +2,7 @@ import React from "react";
 import {faLanguage, faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./SettingsBar.module.css";
-import Icon from "../common/icon/Icon";
+import BarItem from "../common/barItem/BarItem";
 
 const SettingsBar = () => {
 
@@ -12,15 +12,15 @@ const SettingsBar = () => {
 		{id: 3, icon: faSun, hint: 'To dark'}
 	];
 
-	const setIcons = setIconsProps.map(pr => <Icon key={pr.id} icon={pr.icon} hint={pr.hint}/>)
+	const setIcons = setIconsProps.map(pr => <BarItem key={pr.id} icon={pr.icon} hint={pr.hint}/>)
 
 	// const settings = {
 	// 	language: "eng",
 	// 	darkTheme: false
 	// };
 	//
-	// const theme = settings.darkTheme ? <FontAwesomeIcon icon={faMoon} size="2x"/> :
-	// 	<FontAwesomeIcon icon={faSun} size="2x"/>;
+	// const theme = settings.darkTheme ? <FontAwesomeIcon barItem={faMoon} size="2x"/> :
+	// 	<FontAwesomeIcon barItem={faSun} size="2x"/>;
 	//
 	// const onThemeButtonClick = () => {
 	//

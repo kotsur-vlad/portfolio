@@ -1,10 +1,10 @@
 import React from "react";
 
-import styles from './Icon.module.scss';
+import styles from './BarItem.module.scss';
 import {NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-const Icon = (props) => {
+const BarItem = (props) => {
 
 	const onLinkMouseOver = () => {
 		console.log(visibility);
@@ -37,4 +37,4 @@ const Icon = (props) => {
 	)
 }
 
-export default Icon;
+export default BarItem;

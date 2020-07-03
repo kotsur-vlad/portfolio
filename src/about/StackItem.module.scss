@@ -1,0 +1,14 @@
+@import './../common/styles/sass/variables';
+
+$iconsBgColor: rgba(224, 255, 255, 0.1);
+
+.icon {
+  display: inline-block;
+  width: 35px;
+  border-radius: 50%;
+  background-color: $iconsBgColor;
+  color: $primaryColor;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 2.5rem;
+}
