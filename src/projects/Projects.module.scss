@@ -1,0 +1,15 @@
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
+
+.wrapper {
+	@include flex(column, flex-start, center);
+
+	background-color: lightpink;
+}
+
+.projects {
+	@include flex(column, flex-start, stretch);
+	max-width: 85%;
+
+	background-color: antiquewhite;
+}

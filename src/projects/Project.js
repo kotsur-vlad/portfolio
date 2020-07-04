@@ -1,35 +1,38 @@
 import React from "react";
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMinus, faPlus} from '@fortawesome/free-solid-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
-import styles from './Project.module.css';
+import styles from './Project.module.scss';
 
 const Project = (props) => {
 	return (
 		<div className={styles.project}>
 			<div className={styles.title}>
-				<img src="" alt="projectIcon"/>ICO
-				props.title
-				<FontAwesomeIcon icon={faMinus}/> f
+				<img src={props.icon} alt="projectIcon"/>
+				{props.title}
+				<FontAwesomeIcon icon={faMinus}/>
 				<FontAwesomeIcon icon={faPlus}/>
 			</div>
 
 			<div className={styles.main}>
 				<div className={styles.demo}>
-					<img src="" alt="projectPreview"/>
+					<a href={props.demo}>
+						<img src={props.preview} alt="projectPreview"/>
+					</a>
 					<div>
 						<FontAwesomeIcon icon={faGithub}/>
-						<a href="#">source</a>
+						<a href={props.source}>source</a>
 					</div>
 				</div>
 
 				<div className={styles.description}>
 					<div>
-						Technology stack
+						{props.stack}
 					</div>
 					<div>
-						Description
+						{props.description}
 					</div>
 				</div>
 			</div>

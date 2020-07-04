@@ -29,17 +29,20 @@ const About = () => {
 						<li>Age: 24 years</li>
 						<li>City: Minsk</li>
 						<li>Experience: 6 months</li>
-						<li>English: intermediate (B1)</li>
+						<li>English: intermediate</li>
 					</ul>
 				</div>
 				<div className={styles.photo}>
 					<div className={styles.avatar}/>
 					<span>Front-end Developer</span>
 					<ul>
-						<li><a href="#">Resume <FontAwesomeIcon icon={faDownload}/></a></li>
-						<li><a href="https://github.com/kotsur-vlad" rel="noopener noreferrer"
-							   target="_blank"><FontAwesomeIcon
-							icon={faCodeBranch}/> GitHub</a></li>
+						<li>
+							<a href="#">Resume <FontAwesomeIcon icon={faDownload}/></a>
+						</li>
+						<li>
+							<a href="https://github.com/kotsur-vlad" rel="noopener noreferrer"
+							   target="_blank"><FontAwesomeIcon icon={faCodeBranch}/> GitHub</a>
+						</li>
 					</ul>
 				</div>
 				<div className={styles.stack}>

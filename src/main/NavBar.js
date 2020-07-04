@@ -8,8 +8,8 @@ const NavBar = () => {
 
 	const navIconsProps = [
 		{id: 1, icon: faUser, hint: 'About', linkTo: '/', exact: true},
-		{id: 2, icon: faImage, hint: 'Contacts', linkTo: '/projects'},
-		{id: 3, icon: faEnvelope, hint: 'Projects', linkTo: '/contacts'}
+		{id: 2, icon: faImage, hint: 'Projects', linkTo: '/projects'},
+		{id: 3, icon: faEnvelope, hint: 'Contacts', linkTo: '/contacts'}
 	];
 
 	const navIcons = navIconsProps.map(pr => <BarItem key={pr.id} icon={pr.icon} hint={pr.hint} link={pr.linkTo}
