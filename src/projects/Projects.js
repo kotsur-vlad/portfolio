@@ -39,11 +39,12 @@ const Projects = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			<Title title="my projects" padding={4} align="center"/>
+			<Title title="my projects" padding={3} align="center"/>
 			<div className={styles.projects}>
 				{projects}
 			</div>
 		</div>
+
 	);
 }
 

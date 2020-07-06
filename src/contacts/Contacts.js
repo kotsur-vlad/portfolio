@@ -1,6 +1,7 @@
 import React from 'react';
-import {faFacebookSquare, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookSquare, faLinkedin, faTelegram, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import {faAt} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import styles from './Contacts.module.css'
 import Title from "../common/title/Title";
@@ -39,7 +40,7 @@ const Contacts = () => {
 					<input type="text" placeholder="Email"/>
 					<input type="text" placeholder="Subject"/>
 					<input type="text" placeholder="Message"/>
-					<button>Submit</button>
+					<button>Submit <FontAwesomeIcon icon={faTelegramPlane}/></button>
 				</form>
 			</div>
 		</div>

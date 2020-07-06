@@ -77,6 +77,7 @@ $borderColor: #444444;
     border-width: 10px;
     border-style: solid;
     border-color: transparent $primaryColor transparent transparent;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 365px) {
@@ -86,6 +87,6 @@ $borderColor: #444444;
   }
 }
 
-.hintVisible {
+.visible {
   visibility: visible;
 }

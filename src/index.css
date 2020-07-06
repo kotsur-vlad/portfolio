@@ -11,6 +11,10 @@ body {
 	font-size: 1.6rem;
 }
 
+p {
+	margin: 0;
+}
+
 h3 {
 	margin: 0;
 	font-family: 'Oswald', sans-serif;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import styles from './BarItem.module.scss';
 import {NavLink} from "react-router-dom";
@@ -6,23 +6,22 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const BarItem = (props) => {
 
+	const [hintVisibility, setHintVisibility] = useState(false)
+
 	const onLinkMouseOver = () => {
-		console.log(visibility);
-		visibility = !visibility;
+		setHintVisibility(!hintVisibility);
 	};
 
 	const onSettingClick = () => {
 		console.log("sett changed");
 	};
 
-	let visibility = true;
-
-	const hintClassName = visibility ? `${styles.hint} ${styles.hintVisible}` : styles.hint;
+	const hintClassName = hintVisibility ? `${styles.hint} ${styles.visible}` : styles.hint;
 
 	return (
 		<>
 			{props.link
-				? <li className={styles.link} onMouseEnter={onLinkMouseOver}>
+				? <li className={styles.link} onMouseEnter={onLinkMouseOver} onMouseLeave={onLinkMouseOver}>
 					<NavLink exact={props.exact} to={props.link} activeClassName={styles.activeLink}>
 						<FontAwesomeIcon icon={props.icon} size="2x" className={styles.ico}/>
 						<span className={hintClassName}>{props.hint}</span>

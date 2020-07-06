@@ -3,13 +3,12 @@
 
 .wrapper {
 	@include flex(column, flex-start, center);
-
-	background-color: lightpink;
-}
-
-.projects {
-	@include flex(column, flex-start, stretch);
-	max-width: 85%;
-
-	background-color: antiquewhite;
+	margin-bottom: 40px;
+	.projects {
+		@media screen and (max-width: 400px) {
+			align-items: center;
+		}
+		@include flex(column, flex-start, stretch);
+		width: 80%;
+	}
 }
