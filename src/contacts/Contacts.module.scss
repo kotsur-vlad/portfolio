@@ -1,0 +1,88 @@
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
+
+.wrapper {
+	@include flex (column, flex-start, center);
+	.contacts {
+		@include flex (row, center, stretch);
+		flex-wrap: wrap;
+
+		background-color: lightpink;
+		.first{
+			@include flex (column, flex-start, center);
+			min-width: 420px;
+			margin: 0 30px 0 10px;
+			ul {
+				box-sizing: border-box;
+				width: 100%;
+				height: auto;
+				margin-top: 20px;
+				border: 1px solid $primaryColor;
+			}
+			li {
+				height: 42px;
+				text-align: center;
+				//&:nth-child(4) {
+				//	height: 100px;
+				//}
+				&:nth-child(odd) {
+					margin-top: 20px;
+					color: $primaryColor;
+					font: 500 2rem Oswald;
+					letter-spacing: 0.6px;
+				}
+				&:nth-child(even) {
+					letter-spacing: 0.7px;
+				}
+			}
+			.icons {
+				@include flex (row, space-evenly, center);
+				width: 100%;
+				height: 42px;
+				margin-top: auto;
+				background-color: $primaryColor;
+			}
+		}
+		.second {
+			min-width: 420px;
+			margin: 0 10px 0px 30px;
+
+			form {
+				@include flex (column, flex-start, center);
+				margin-top: 20px;
+				input, textarea {
+					box-sizing: border-box;
+					width: 100%;
+					height: 42px;
+					margin-bottom: 10px;
+					padding: 5px 10px;
+					outline: none;
+					border: 1px solid $primaryColor;
+					background-color: transparent;
+					color: $primaryColor;
+					font: 400 1.5rem Roboto;
+				}
+				textarea {
+					resize: vertical;
+					height: 100px;
+					min-height: 40px;
+				}
+				button {
+					width: 100%;
+					height: 42px;
+					border: none;
+					outline: none;
+					background-color: $primaryColor;
+					color: $alternateColor;
+					font-size: 1.5rem;
+					letter-spacing: 0.6px;
+					cursor: pointer;
+					&:active{
+						position: relative;
+						top: 1px;
+					}
+				}
+			}
+		}
+	}
+}

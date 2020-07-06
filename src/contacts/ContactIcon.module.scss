@@ -1,0 +1,32 @@
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
+
+.wrapper {
+  a {
+    @include flex(row, center, center);
+    width: 34px;
+    height: 34px;
+    border: 1px solid $alternateColor;
+    border-radius: 50%;
+    color: $alternateColor;
+    font-size: 1.3rem;
+
+    &:visited {
+      color: $alternateColor;
+    }
+
+    &:hover {
+      background-color: $alternateColor;
+      color: $primaryColor;
+    }
+
+    &:active {
+      position: relative;
+      top: 1px;
+    }
+
+    .icon {
+      cursor: pointer;
+    }
+  }
+}

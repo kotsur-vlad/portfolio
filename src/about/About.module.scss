@@ -68,6 +68,10 @@ $linksHoverColor: #ffffff;
         padding: 5px 10px;
         border: 1px solid $primaryColor;
 
+        &:visited {
+          color: $primaryColor;
+        }
+
         &:hover {
           @include transition(all 0.7s);
           background: $linksHoverColor;
@@ -78,9 +82,6 @@ $linksHoverColor: #ffffff;
           top: 1px;
         }
 
-        &:visited {
-          color: $primaryColor;
-        }
       }
     }
 

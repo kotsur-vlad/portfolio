@@ -3,7 +3,7 @@ import {faFacebookSquare, faLinkedin, faTelegram, faTelegramPlane} from "@fortaw
 import {faAt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import styles from './Contacts.module.css'
+import styles from './Contacts.module.scss'
 import Title from "../common/title/Title";
 import ContactIcon from "./ContactIcon";
 
@@ -21,27 +21,33 @@ const Contacts = () => {
 
 
 	return (
-		<div className={styles.contacts}>
+		<div className={styles.wrapper}>
 			<Title title="contact me" padding={3} align="center"/>
+			<div className={styles.contacts}>
 
-			<div>
-				Adress:
-				Minsk, Belarus
-				Phone:
-				+375 44 5608454
-				<div>
-					{contactIcons}
+				<div className={styles.first}>
+					<ul>
+						<li>Address:</li>
+						<li>Minsk, Belarus</li>
+						<li>Phone:</li>
+						<li>+375 44 5608454</li>
+					</ul>
+
+					<div className={styles.icons}>
+						{contactIcons}
+					</div>
 				</div>
-			</div>
 
-			<div>
-				<form action="">
-					<input type="text" placeholder="Name"/>
-					<input type="text" placeholder="Email"/>
-					<input type="text" placeholder="Subject"/>
-					<input type="text" placeholder="Message"/>
-					<button>Submit <FontAwesomeIcon icon={faTelegramPlane}/></button>
-				</form>
+				<div className={styles.second}>
+					<form action="">
+						<input required type="text" placeholder="Name"/>
+						<input required type="text" placeholder="Email"/>
+						<input type="text" placeholder="Subject"/>
+						<textarea required placeholder="Message"/>
+						<button>Submit <FontAwesomeIcon icon={faTelegramPlane}/></button>
+					</form>
+				</div>
+
 			</div>
 		</div>
 	);

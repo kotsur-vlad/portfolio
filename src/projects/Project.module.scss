@@ -90,6 +90,10 @@
         color: $primaryColor;
         font-size: 1.5rem;
 
+        &:visited {
+          color: $primaryColor;
+        }
+
         &:hover {
           border-bottom: 1px solid $primaryColor;
         }
@@ -99,9 +103,6 @@
           top: 1px;
         }
 
-        &:visited {
-          color: $primaryColor;
-        }
       }
     }
 
