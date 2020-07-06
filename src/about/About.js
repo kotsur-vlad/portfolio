@@ -11,10 +11,10 @@ const About = () => {
 
 	const stackInfoProps = [
 		{id: 1, icon: faHtml5, info: ' HTML5'},
-		{id: 2, icon: faCss3Alt, info: ' CSS3, Sass'},
-		{id: 3, icon: faJsSquare, info: ' ES6+, axios'},
-		{id: 4, icon: faReact, info: ' React-Redux'},
-		{id: 5, icon: faToolbox, info: ' Git, Yarn, npm'}
+		{id: 2, icon: faCss3Alt, info: ' CSS3, Sass, Flex'},
+		{id: 3, icon: faJsSquare, info: ' ES6+, Axios'},
+		{id: 4, icon: faReact, info: ' React-Redux (react-router, hooks, react-reveal)'},
+		{id: 5, icon: faToolbox, info: ' Git, Yarn, Npm'}
 	]
 
 	const stackInfo = stackInfoProps.map(pr => <StackItem key={pr.id} icon={pr.icon} info={pr.info}/>)
@@ -28,7 +28,7 @@ const About = () => {
 						<li>Name: Vlad Kotsur</li>
 						<li>Age: 24 years</li>
 						<li>City: Minsk</li>
-						<li>Experience: 6 months</li>
+						<li>Experience: freelance (febr, 2020)</li>
 						<li>English: intermediate</li>
 					</ul>
 				</div>
@@ -61,7 +61,7 @@ const About = () => {
 					some
 					experience in commercial freelance development. In my free time I solve tasks on codewars:&nbsp;
 					<a href="https://www.codewars.com/users/kotsur.vlad/" rel="noopener noreferrer" target="_blank">
-						<img src="https://www.codewars.com/users/kotsur.vlad/badges/micro" alt=""/>
+						<img src="https://www.codewars.com/users/kotsur.vlad/badges/micro" alt="codewarsBadge"/>
 					</a>
 				</p>
 				<p>
