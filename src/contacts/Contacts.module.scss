@@ -1,6 +1,20 @@
 @import './../common/styles/sass/variables';
 @import './../common/styles/sass/mixins';
 
+%content-block {
+  @media (min-width: 880px) and (max-width: 1060px) {
+    min-width: 350px;
+  }
+  @media (min-width: 460px) and (max-width: 530px) {
+    min-width: 350px;
+  }
+  @media screen and (max-width: 459px) {
+    min-width: 276px;
+  }
+  min-width: 420px;
+  margin: 0 20px;
+}
+
 .wrapper {
   @include flex(column, flex-start, center);
   margin-bottom: 40px;
@@ -10,18 +24,8 @@
     flex-wrap: wrap;
 
     .first {
-      @media (min-width: 880px) and (max-width: 1060px) {
-        min-width: 350px;
-      }
-      @media (min-width: 460px) and (max-width: 530px) {
-        min-width: 350px;
-      }
-      @media screen and (max-width: 459px) {
-        min-width: 276px;
-      }
+      @extend %content-block;
       @include flex(column, flex-start, center);
-      min-width: 420px;
-      margin: 0 20px;
 
       ul {
         box-sizing: border-box;
@@ -57,17 +61,7 @@
     }
 
     .second {
-      @media (min-width: 880px) and (max-width: 1060px) {
-        min-width: 350px;
-      }
-      @media (min-width: 460px) and (max-width: 530px) {
-        min-width: 350px;
-      }
-      @media screen and (max-width: 459px) {
-        min-width: 276px;
-      }
-      min-width: 420px;
-      margin: 0 20px;
+      @extend %content-block;
 
       form {
         @include flex(column, flex-start, center);

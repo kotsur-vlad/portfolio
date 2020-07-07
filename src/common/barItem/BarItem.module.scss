@@ -18,7 +18,14 @@ $borderColor: #444444;
   }
 }
 
+%media-cursor {
+  @media screen and (max-width: 1024px) {
+    cursor: default;
+  }
+}
+
 .link {
+  @extend %media-cursor;
   position: relative;
 
   a {
@@ -34,6 +41,7 @@ $borderColor: #444444;
 
 .button {
   @extend %link-button-block;
+  @extend %media-cursor;
 
   &:hover {
     background: $alternateColor;
@@ -56,10 +64,10 @@ $borderColor: #444444;
 }
 
 .hint {
-  @include transition(opacity 0.5s);
   visibility: hidden;
   position: absolute;
   left: 60px;
+  top: 4px;
   width: auto;
   padding: 13px 24px;
   border-radius: 3px;
@@ -69,6 +77,7 @@ $borderColor: #444444;
   opacity: 0.8;
 
   &::after {
+    @extend %media-cursor;
     content: "";
     position: absolute;
     top: 50%;
@@ -82,8 +91,8 @@ $borderColor: #444444;
 
   @media screen and (max-width: 365px) {
     left: 50px;
+    top: 2px;
     padding: 10px 20px;
-
   }
 }
 

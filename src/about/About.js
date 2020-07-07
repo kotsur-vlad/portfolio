@@ -6,6 +6,7 @@ import {faHtml5, faCss3Alt, faJsSquare, faReact} from '@fortawesome/free-brands-
 import styles from './About.module.scss'
 import Title from "../common/title/Title";
 import StackItem from "./StackItem";
+import resume from './../assets/kotsur_vlad.pdf'
 
 const About = () => {
 
@@ -37,7 +38,8 @@ const About = () => {
 					<span>Front-end Developer</span>
 					<ul>
 						<li>
-							<a href="./../assets/kotsur_vlad.pdf" title="My resume" target="_blank">Resume <FontAwesomeIcon icon={faDownload}/></a>
+							<a href={resume} title="My resume" rel="noopener noreferrer"
+							   target="_blank">Resume <FontAwesomeIcon icon={faDownload}/></a>
 						</li>
 						<li>
 							<a href="https://github.com/kotsur-vlad" title="My repositories" rel="noopener noreferrer"
