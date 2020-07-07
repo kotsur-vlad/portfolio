@@ -3,30 +3,32 @@
 
 .wrapper {
 	@include flex (column, flex-start, center);
+	margin-bottom: 40px;
 	.contacts {
+
 		@include flex (row, center, stretch);
 		flex-wrap: wrap;
 
 		background-color: lightpink;
 		.first{
+			@media screen and (max-width: 1020px) {
+				min-width: 320px;
+			}
 			@include flex (column, flex-start, center);
 			min-width: 420px;
 			margin: 0 30px 0 10px;
 			ul {
 				box-sizing: border-box;
 				width: 100%;
-				height: auto;
+				height: 256px;
 				margin-top: 20px;
 				border: 1px solid $primaryColor;
 			}
 			li {
 				height: 42px;
 				text-align: center;
-				//&:nth-child(4) {
-				//	height: 100px;
-				//}
 				&:nth-child(odd) {
-					margin-top: 20px;
+					margin-top: 25px;
 					color: $primaryColor;
 					font: 500 2rem Oswald;
 					letter-spacing: 0.6px;
@@ -44,8 +46,11 @@
 			}
 		}
 		.second {
+			@media screen and (max-width: 1020px) {
+				min-width: 320px;
+			}
 			min-width: 420px;
-			margin: 0 10px 0px 30px;
+			margin: 0 10px 0 30px;
 
 			form {
 				@include flex (column, flex-start, center);
