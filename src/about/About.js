@@ -37,10 +37,10 @@ const About = () => {
 					<span>Front-end Developer</span>
 					<ul>
 						<li>
-							<a href="#">Resume <FontAwesomeIcon icon={faDownload}/></a>
+							<a href="./../assets/kotsur_vlad.pdf" title="My resume" target="_blank">Resume <FontAwesomeIcon icon={faDownload}/></a>
 						</li>
 						<li>
-							<a href="https://github.com/kotsur-vlad" rel="noopener noreferrer"
+							<a href="https://github.com/kotsur-vlad" title="My repositories" rel="noopener noreferrer"
 							   target="_blank"><FontAwesomeIcon icon={faCodeBranch}/> GitHub</a>
 						</li>
 					</ul>

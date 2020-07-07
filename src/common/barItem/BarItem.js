@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-
-import styles from './BarItem.module.scss';
 import {NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import styles from './BarItem.module.scss';
 
 const BarItem = (props) => {
 

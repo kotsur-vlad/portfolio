@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMinus, faPlay, faPlus} from '@fortawesome/free-solid-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
